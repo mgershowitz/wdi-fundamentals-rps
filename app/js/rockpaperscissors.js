@@ -18,40 +18,21 @@ function randomPlay() {
     }
 }
 ////////////////////////////////////////////////
-/*           Write Your Code does this work            */
+/*           Write Your Code Here          */
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-	return
-	var move 
-	if (move === "rock") {
-	move =  "rock";
-	} else if (move == "paper") {
-		move = "paper";
-	} else if (move == "scissors") {
-		move = "scissors"; 
-	} else (move === null); {
-		move = getInput();
-}}
-
+	return move || getInput();
+}
 function getComputerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-   return
-	var move = "rock";
-	if (move == "rock") {
-	move = "rock";
-	} else if (move == "paper") {
-		move = "paper";
-	} else if (move == "scissors") {
-		mov = "scissors"; 
-	} else (move === null); {
-		move = randomPlay();
-}}
+   return move || randomPlay();
+}
 
 function getWinner(playerMove,computerMove) {
     var winner;
@@ -59,6 +40,26 @@ function getWinner(playerMove,computerMove) {
     // Assume that the only values playerMove and computerMove can have are 'rock', 'paper', and 'scissors'.
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
     /* YOUR CODE HERE */
+    if (playerMove == computerMove) {
+    	console.log("tie");
+    }
+    else if (playerMove == "rock" && computerMove == "paper") {
+    	console.log("computer")
+    }
+    else if (playerMove == "rock" && computerMove == "scissors") {
+    	console.log("player")
+    }
+    else if (playerMove == "paper" && computerMove == "rock") {
+    	console.log("player")
+    }
+    else if (playerMove == "paper" && computerMove == "scissors") {
+    	console.log("computer")
+    }
+    else if (playerMove == "scissors" && computerMove == "paper") {
+    	console.log("player")
+    }else if (playerMove == "scissors" && computerMove == "rock") {
+    	console.log("computer")
+    }
     return winner;
 }
 
