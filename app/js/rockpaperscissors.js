@@ -44,21 +44,21 @@ function getWinner(playerMove,computerMove) {
     	console.log("tie");
     }
     else if (playerMove == "rock" && computerMove == "paper") {
-    	console.log("computer")
+    	console.log("computer");
     }
     else if (playerMove == "rock" && computerMove == "scissors") {
-    	console.log("player")
+    	console.log("player");
     }
     else if (playerMove == "paper" && computerMove == "rock") {
-    	console.log("player")
+    	console.log("player");
     }
     else if (playerMove == "paper" && computerMove == "scissors") {
-    	console.log("computer")
+    	console.log("computer");
     }
     else if (playerMove == "scissors" && computerMove == "paper") {
-    	console.log("player")
+    	console.log("player");
     }else if (playerMove == "scissors" && computerMove == "rock") {
-    	console.log("computer")
+    	console.log("computer");
     }
     return winner;
 }
