@@ -64,8 +64,7 @@ while (playerWins < 5 && computerWins < 5) {
         playerWins += 1;
     } else if (winner === "Hal!") {
         computerWins += 1;
-    } else if (winner === "no one!") {
-		playerWins = playerWins;
+    } else {
 	}
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
     // This function should continue to play Rock Paper Scissors until either the
